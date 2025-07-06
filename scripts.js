@@ -5,7 +5,7 @@ $(document).ready(function() {
 });
 
 function updateCountdown() {
-    const endDate = new Date('2025-08-09T16:00:00');
+    const endDate = new Date('2025-08-09T15:00:00');
     const now = new Date();
     const timeDiff = endDate - now;
 
