@@ -1,0 +1,16 @@
+{
+  "name": "Boda Selbyn y Yohana",
+  "short_name": "BodaSyY",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#194569",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48 72x72 96x96 128x128 144x144 152x152 192x192 384x384 512x512",
+      "type": "image/x-icon"
+    }
+  ]
+}
