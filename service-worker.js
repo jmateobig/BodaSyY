@@ -8,7 +8,7 @@ const urlsToCache = [
   "/BodaSyY/image1.jpg",
   "/BodaSyY/image2.jpg",
   "/BodaSyY/image3.jpg",
-  "/BodaSyY/image4.jpg",
+  "/BodaSyY/image5.jpg",
   "/BodaSyY/pin.png",
   "/BodaSyY/anillos.png",
   "/BodaSyY/copas.png",
@@ -20,10 +20,22 @@ const urlsToCache = [
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(urlsToCache);
+      return Promise.all(
+        urlsToCache.map((url) =>
+          fetch(url).then((response) => {
+            if (!response.ok) {
+              throw new Error(`Fallo al obtener: ${url} - ${response.statusText}`);
+            }
+            return cache.put(url, response.clone());
+          })
+        )
+      );
+    }).catch((error) => {
+      console.error("Error cacheando archivos:", error);
     })
   );
 });
+Con eso
 
 self.addEventListener("fetch", (event) => {
   event.respondWith(
