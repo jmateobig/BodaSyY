@@ -327,6 +327,16 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
+.whatsapp-right {
+    position: fixed;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: focus 2s ease-in-out forwards, vibrate 1.5s infinite;
+}
+
 @media (min-width: 768px) {
 
     .whatsapp-label {
@@ -347,6 +357,10 @@ body {
     .decorative-corner-whatsapp {
         position: fixed;
         margin-left: 50vw;
+    }
+
+    .whatsapp-right {
+        top: 80vh;
     }
     
     .decorative-corner {
@@ -394,6 +408,10 @@ body {
         width: 55px;
         height: 55px;
         padding: 5px;
+    }
+
+    .whatsapp-right {
+        top: 65vh;
     }
 
     .decorative-corner-whatsapp {
@@ -574,15 +592,4 @@ body {
 
 #playPauseButton.active {
     animation: none;
-}
-
-.whatsapp-right {
-    position: fixed;
-    top: 73vh;
-    left: 0;
-    z-index: 9999;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    animation: focus 2s ease-in-out forwards, vibrate 1.5s infinite;
 }
