@@ -35,7 +35,6 @@ self.addEventListener("install", (event) => {
     })
   );
 });
-Con eso
 
 self.addEventListener("fetch", (event) => {
   event.respondWith(
