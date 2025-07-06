@@ -78,6 +78,12 @@ body {
     z-index: 1;
 }
 
+.decorative-corner-whatsapp {
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
 .content-wrapper {
     position: relative;
     z-index: 2;
@@ -304,7 +310,44 @@ body {
     display: none;
 }
 
+.whatsapp-label {
+    background-color: #ffffff00;
+    color: #414141;
+    font-family: var(--font-family-lobster);
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 12px;
+    margin-bottom: 6px;
+    
+}
+
+.whatsapp-icon {
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
 @media (min-width: 768px) {
+
+    .whatsapp-label {
+        font-size: 17px;
+    }
+
+    .whatsapp-icon {
+        width: 85px;
+        height: 85px;
+        padding: 8px;
+    }
+
+    .decorative-corner-whatsapp {
+        width: 85px;
+        height: 85px;
+    }
+
+    .decorative-corner-whatsapp {
+        position: fixed;
+        margin-left: 50vw;
+    }
     
     .decorative-corner {
         width: 300px;
@@ -343,6 +386,21 @@ body {
         height: 210px;
     }
 
+    .whatsapp-label {
+        font-size: 14px;
+    }
+
+    .whatsapp-icon {
+        width: 55px;
+        height: 55px;
+        padding: 5px;
+    }
+
+    .decorative-corner-whatsapp {
+        width: 75px;
+        height: 75px;
+    }
+
     .section-1, .section-2 {
         height: auto;
     }
@@ -367,6 +425,10 @@ body {
     }
 
     .decorative-corner {
+        position: absolute;
+    }
+
+    .decorative-corner-whatsapp {
         position: absolute;
     }
 
@@ -512,4 +574,15 @@ body {
 
 #playPauseButton.active {
     animation: none;
+}
+
+.whatsapp-right {
+    position: fixed;
+    top: 80vh;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: focus 2s ease-in-out forwards, vibrate 1.5s infinite;
 }
