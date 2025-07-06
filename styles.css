@@ -578,7 +578,7 @@ body {
 
 .whatsapp-right {
     position: fixed;
-    top: 80vh;
+    top: 73vh;
     left: 0;
     z-index: 9999;
     display: flex;
