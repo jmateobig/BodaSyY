@@ -14,7 +14,7 @@ const urlsToCache = [
   "/BodaSyY/copas.png",
   "/BodaSyY/pareja.png",
   "/BodaSyY/favicon.ico",
-  "/BodaSyY/superior.png"
+  "/BodaSyY/prueba.png"
 ];
 
 self.addEventListener("install", (event) => {

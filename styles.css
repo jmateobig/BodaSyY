@@ -1,12 +1,12 @@
 /* styles.css */
 :root {
-    --gray-color: #353535;
-    --text-color: #353535;
-    --subtitle-color:#1f1f1f;
+    --gray-color: #325276;
+    --text-color: #325276;
+    --subtitle-color:#325276;
     --font-family-comic: 'Dancing Script', Arial, sans-serif;
     --font-family-great: 'Great Vibes', cursive;
     --font-family-lobster: 'Dancing Script', Arial, sans-serif;
-    --border-color: #194569;
+    --border-color: #738ba6;
     --flecha-color: #646464;
     --bg-gradient: linear-gradient(250deg, #fcfeff 60%, #DBECF4 180%);
 }
@@ -53,29 +53,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background: var(--bg-gradient);
     position: relative;
+
+    /* Fondo por defecto (para móviles) */
+    background-image: url('prueba.png');
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.top-right {
-    top: 0;
-    left: 0;
-    background-image: url('superior.png');
-}
-
-.bottom-left {
-    bottom: 0;
-    right: 0;
-    background-image: url('superior.png');
-    transform: rotate(180deg);
-}
-
-.decorative-corner {
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .decorative-corner-whatsapp {
@@ -168,7 +153,7 @@ body {
 .title {
     font-family: var(--font-family-lobster);
     color: var(--gray-color);
-    color: var(----subtitle-color);
+    color: var(--subtitle-color);
     font-weight: 700;
     font-size: 40px;
     padding-bottom: 0 !important;
@@ -202,7 +187,7 @@ body {
 }
 
 .padre, .madre {
-    font-size: 20px;
+    font-size: 24px;
     font-family: var(--font-family-lobster);
     color: var(--text-color);
     padding-bottom: 0;
@@ -279,7 +264,7 @@ body {
 }
 
 .pin-container img {
-    width: 35px;
+    width: 20px;
     height: auto;
 }
 
@@ -333,11 +318,6 @@ body {
         top: 80vh;
     }
 
-    .decorative-corner {
-        width: 300px;
-        height: 300px;
-    }
-
     .container-fluid {
         display: flex;
         padding: 0;
@@ -357,19 +337,14 @@ body {
         max-height: 100vh;
     }
 
-    .decorative-corner {
-        position: fixed;
-        margin-left: 49vw;
+    .section-2 {
+        background-position: right center;
+        background-size: 55% 100%; /* La imagen ocupa el doble del ancho, solo se ve la mitad derecha */
     }
 
 }
 
 @media (max-width: 767px) {
-    
-    .decorative-corner {
-        width: 200px;
-        height: 210px;
-    }
 
     .whatsapp-label {
         font-size: 14px;
@@ -413,9 +388,6 @@ body {
         padding-right: 0;
     }
 
-    .decorative-corner {
-        position: absolute;
-    }
 
     .decorative-corner-whatsapp {
         position: absolute;
@@ -423,14 +395,14 @@ body {
 
     .cita {
         font-size: 21px;
-        padding-left: 90px;
-        padding-right: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .cita-pie {
         font-size: 15px;
-        padding-left: 90px;
-        padding-right: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .title {
@@ -442,7 +414,7 @@ body {
     }
 
     .padre, .madre {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .div-nombre {
@@ -590,4 +562,36 @@ body {
     border-radius: 50%;
     background-color: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b3d3fc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 3px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+
+  /* Efecto de sombra suave */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.35);
+}
+
+.btn-whatsapp:hover {
+  background-color: #1e8ebe;
+
+  /* Efecto más fuerte al hacer hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.45)
+}
+
+.btn-whatsapp .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
 }
