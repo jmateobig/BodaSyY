@@ -6,7 +6,6 @@ const urlsToCache = [
   "/BodaSyY/scripts.js",
   "/BodaSyY/audio.mp3",
   "/BodaSyY/image1.jpg",
-  "/BodaSyY/image2.jpg",
   "/BodaSyY/image3.jpg",
   "/BodaSyY/image5.jpg",
   "/BodaSyY/pin.png",
