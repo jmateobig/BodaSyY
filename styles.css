@@ -298,7 +298,7 @@ body {
 @media (min-width: 768px) {
 
     .whatsapp-label {
-        font-size: 17px;
+        font-size: 27px;
     }
 
     .whatsapp-icon {
@@ -347,7 +347,7 @@ body {
 @media (max-width: 767px) {
 
     .whatsapp-label {
-        font-size: 14px;
+        font-size: 24px;
     }
 
     .whatsapp-icon {
@@ -549,7 +549,7 @@ body {
 
 .whatsapp-label {
     background-color: #ffffff00;
-    color: var(--border-color);
+    color: var(--text-color);
     font-family: var(--font-family-lobster);
     font-weight: bold;
     padding: 6px 12px;
@@ -568,12 +568,12 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #b3d3fc;
+  background-color: #4d6f9b;
   color: white;
   border: none;
   border-radius: 4px;
-  padding: 3px 10px;
-  font-size: 16px;
+  padding: 5px 25px;
+  font-size: 24px;
   font-weight: 500;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -584,7 +584,7 @@ body {
 }
 
 .btn-whatsapp:hover {
-  background-color: #1e8ebe;
+  background-color: #042846;
 
   /* Efecto más fuerte al hacer hover */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.45)
